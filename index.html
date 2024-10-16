@@ -1,1018 +1,446 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <!-- Author -->
-    <meta name="author" content="Themes Industry">
-    <!-- description -->
-    <meta name="description" content="MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
-    <!-- keywords -->
-    <meta name="keywords" content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
-    <!-- Page Title -->
-    <title>Personal Portfolio Website</title>
-    <!-- Favicon -->
-        <link href="img/stumbleupon copy.png" rel="icon">
-    <!-- Bundle -->
-    <link href="css/bundle.min.css" rel="stylesheet">
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <!-- Plugin Css -->
-    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
-    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="css/owl.carousel.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-    <!-- Style Sheet -->
-    <link href="css/tootik.min.css" rel="stylesheet">
-    <link href="css/line-awesome.min.css" rel="stylesheet">
-    <link href="css/jquery.pagepiling.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inaama Jay</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="../../../../css2?family=Syne:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="90">
-
-<!-- START LOADER -->
-<div class="loader-bg">
-    <div id="container">
-        <svg viewBox="0 0 100 100">
-            <defs>
-                <filter id="shadow">
-                    <feDropShadow dx="0" dy="0" stdDeviation="0.5"
-                                  flood-color="#dabd1d"/>
-                </filter>
-            </defs>
-            <circle id="spinner" style="fill:transparent;stroke:#dabd1d;stroke-width: 8px;stroke-linecap: round;filter:url(#shadow);" cx="50" cy="50" r="45"/>
-        </svg>
-    </div>
-</div>
-<!-- END LOADER -->
-
-<!-- START HEADER -->
-<header>
-    <!--Navigation-->
-    <nav class="navbar navbar-top-default navbar-expand-lg navbar-simple nav-line">
-        <a href="#home" title="Logo" class="logo">
-            <!--Logo Default-->
-            <div class="mega-logo">
-                <img src="img/stumbleupon copy.png" alt="logo" class="ml-lg-3 m-0">
-                
-            </div>
-        </a>
-
-        <!--Side Menu Button-->
-        <div class="navigation-toggle">
-            <ul class="slider-social toggle-btn my-0">
-                <li>
-                    <a href="javascript:void(0);" class="sidemenu_btn" id="sidemenu_toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
+<body>
+    <!-- Preloader -->
+	<div class="preloader-bg"></div>
+	<div id="preloader">
+		<div id="preloader-status">
+			<div class="preloader-position loader"> <span></span> </div>
+		</div>
+	</div>
+    <!-- Cursor -->
+    <div class="cursor js-cursor"></div>
+    <!-- Menu -->
+    <nav class="nilsbrown-menu" id="nilsbrown-navbar-spy">
+        <div class="nilsbrown-menu-inner" id="nilsbrown-navbar">
+            <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Resume</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <!-- Dropdown menu
+                <li class="dropdown"> <span>Dropdown <i class="ti-angle-down"></i></span>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Dropdown 1</a></li>
+                        <li class="dropdown-item"><a href="#">Dropdown 2</a></li>
+                        <li class="dropdown-item"><a href="#">Dropdown 3</a></li>
+                    </ul>
                 </li>
+                -->
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
-
-    <!--Side Nav-->
-    <div class="side-menu hidden">
-        <span id="btn_sideNavClose">
-          <i class="lni lni-plus btn-close"></i>
-        </span>
-        <div class="inner-wrapper">
-            <nav class="side-nav w-100">
-                <a href="#home" title="Logo" class="logo navbar-brand">
-                    <img src="img/stumbleupon copy.png" alt="logo">
-                </a>
-                <ul class="navbar-nav text-capitalize">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#timeline">Timeline</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <div class="text-center sidebar_btn">
-                    <a href="personal-hotspot/download-resume/resume.pdf" download class="btn btn-medium btn-rounded btn-yellow text-capitalize">Download Resume</a>
+    <!-- Header -->
+    <header class="nilsbrown-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-8 col-md-8">
+                    <div class="logo-wrap">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="images/logo-light.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
                 </div>
-            </nav>
-
-            <div class="side-footer w-100">
-                <ul class="social-icons-simple">
-                    <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-facebook-filled"></i> </a> </li>
-                    <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-instagram-original"></i> </a> </li>
-                    <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-twitter"></i> </a> </li>
-                    <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-linkedin"></i> </a> </li>
-                </ul>
-                <p>&copy; Animation Coding</p>
+                <!-- Menu Burger -->
+                <div class="col-4 col-md-4 text-right nilsbrown-menu-burger-wrap"> <a href="#" class="nilsbrown-nav-toggle nilsbrown-js-nav-toggle"><i></i></a> </div>
             </div>
         </div>
-    </div>
-    <a id="close_side_menu" href="javascript:void(0);"></a>
-</header>
-<!-- END HEADER -->
-
-<div id="pagepiling">
-
-<!-- START BANNER -->
-    <section class="section slide1 p-0" id="home">
-        <div class="slider-area" id="slider-area">
-            <div class="row align-items-center">
-                <div class="col-12 col-lg-6 image-order">
-                    <div class="slider-image">
-                        <img src="img/slider-img.png" alt="Slider-Image">
+    </header>
+    <!-- Homepage -->
+    <section id="home" class="header-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-section-wrap">
+                        <div class="header-view-on-mobile">
+                            <h1> Inaama Jay</h1>
+                            <h6>Creative Web & App Developer</h6>
+                        </div>
+                        <div class="transform-banner position-relative">
+                            <img class="img header-img header-img-left wow imago" style="width: 450px;" src="images/slider.jpg" alt="">
+                        </div>
+                        <div class="header-cont header-cont-right">
+                            <div class="header-cont-absolute header-cont-absolute-right">
+                                <div class="header-not-view-on-mobile">
+                                    <h1 class="wow" data-splitting=""> Inaama Jay</h1>
+                                    <h6 class="wow" data-splitting="">Creative Web & App Developer</h6>
+                                </div>
+                                <div class="header-cont-text">
+                                    <p class="wow" data-splitting="">Hi, I’m Inaama Jay and I am creative web & app developer who dream making the world better place by creating captivating products.</p>
+                                </div>
+                                <div class="btn-wrap text-center">
+                                    <div class="btn-link"> <a href="#">Download CV <i class="ti-download"></i></a> <span class="btn-block color1 animation-bounce"></span> </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 text-md-center text-lg-left">
-                    <div class="slider-content">
-                        <h1 class="main-font text-uppercase"><span class="slider-text px-2"> Hello, I am </span> <span class="d-block text-yellow"> web designer.</span></h1>
-                        <p class="pt-3 alt-font content-para">Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.  Lorem Ipsum has been the industry’s standard dummy.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Circle-One -->
-            <div class="circle-one">
-                 <span data-tootik="About" data-tootik-conf="right dark square shadow">
-                    <a href="#about">
-                        <span class="animated-circle position-relative"></span>
-                    </a>
-                 </span>
-            </div>
-            <!-- Circle-Two -->
-            <div class="circle-two">
-                 <span data-tootik="Timeline" data-tootik-conf="left dark square shadow">
-                    <a href="#timeline">
-                        <span class="animated-circle position-relative"></span>
-                    </a>
-                 </span>
-            </div>
-            <!-- Circle-Three -->
-            <div class="circle-three">
-              <span data-tootik="Portfolio" data-tootik-conf="top dark square shadow">
-                    <a href="#portfolio">
-                        <span class="animated-circle position-relative"></span>
-                    </a>
-              </span>
-            </div>
-            <!-- Circle-Four -->
-            <div class="circle-four">
-                  <span data-tootik="Testimonials" data-tootik-conf="bottom dark square shadow">
-                    <a href="#testimonial">
-                        <span class="animated-circle position-relative"></span>
-                    </a>
-                  </span>
-            </div>
-            <!-- Circle-Five -->
-            <div class="circle-five">
-                  <span data-tootik="Contact" data-tootik-conf="bottom dark square shadow">
-                        <a href="#contact">
-                            <span class="animated-circle position-relative"></span>
-                        </a>
-                  </span>
             </div>
         </div>
     </section>
-<!-- END BANNER -->
-
-<!-- START SKILLS -->
-    <section class="section slide2 skills" id="about">
+    <!-- Services -->
+    <section id="services" class="services clear section-padding">
         <div class="container">
-            <div class="row pb-5">
-                <div class="col-12 col-md-7 pl-md-0">
-                    <h3 class="main-font text-uppercase"><span class="text-yellow d-block"> Product Designer & </span> <span> Digital Creative Director </span></h3>
-                    <p class="py-2 alt-font">Specialized in UI/UX, Branding and digital designs.</p>
+            <div class="row mb-45">
+                <div class="col-md-4">
+                    <h6 class="wow" data-splitting="">Services That I Provide</h6>
+                    <h1 class="wow" data-splitting="">Services</h1>
                 </div>
-                <div class="col-12 col-md-5 text-md-right pt-4 pt-md-0">
-                    <h2 class="m-0 text-yellow main-font">12+</h2>
-                    <p class="alt-font">Years of Experience</p>
+                <div class="col-md-7 offset-md-1 mt-45">
+                    <p class="wow fadeInUp" data-wow-delay=".6s">Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.</p>
                 </div>
             </div>
-            <div class="row pt-md-5 skill-box">
-                <div class="col-12 col-md-6">
-
-                    <div class="row">
-                        <!-- First Skill -->
-                        <div class="col-12 col-md-6 text-center text-md-left pl-md-0">
-                            <h4 class="main-font text-yellow skill">WEB DESIGN</h4>
-                            <p class="alt-font text-white mt-3">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="services-page.html"> <span class="icon et-laptop"></span>
+                                <h5>Website Design</h5>
+                                <p>Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.</p>
+                                <div class="numb">01</div>
+                            </a>
                         </div>
-                        <!-- Second Skill -->
-                        <div class="col-12 col-md-6 pt-5 pt-md-0 pr-md-0 text-center text-md-left">
-                            <h4 class="main-font text-yellow skill">MARKETING</h4>
-                            <p class="alt-font text-white mt-3">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.</p>
+                        <div class="item">
+                            <a href="services-page.html"> <span class="icon et-bargraph"></span>
+                                <h5>SEO Marketing</h5>
+                                <p>Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.</p>
+                                <div class="numb">02</div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="services-page.html"> <span class="icon et-basket"></span>
+                                <h5>eCommerce</h5>
+                                <p>Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.</p>
+                                <div class="numb">03</div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="services-page.html"> <span class="icon et-browser"></span>
+                                <h5>Graphic Design</h5>
+                                <p>Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.</p>
+                                <div class="numb">04</div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="services-page.html"> <span class="icon et-target"></span>
+                                <h5>Digital Marketing</h5>
+                                <p>Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.</p>
+                                <div class="numb">05</div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="services-page.html"> <span class="icon et-chat"></span>
+                                <h5>Social Media</h5>
+                                <p>Website ravida surna eveti semen the conse tusio anivite dianne one nivam acestion vue artin dictum.</p>
+                                <div class="numb">06</div>
+                            </a>
                         </div>
                     </div>
-                    <div class="row mt-5">
-                        <!-- Third Skill -->
-                        <div class="col-12 col-md-6 text-center text-md-left pl-md-0">
-                            <h4 class="main-font text-yellow skill">DEVELOPMENT</h4>
-                            <p class="alt-font text-white mt-3">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.</p>
-                        </div>
-                        <!-- Fourth Skill -->
-                        <div class="col-12 col-md-6 pt-5 pt-md-0 text-center text-md-left pr-md-0">
-                            <h4 class="main-font text-yellow skill">DIGITAL MEDIA</h4>
-                            <p class="alt-font text-white mt-3">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit.</p>
-                        </div>
-                    </div>
-
                 </div>
-                <!-- Progress Bars -->
-                <div class="col-12 col-md-5 offset-md-1 text-left pr-md-0 bars-section">
-                    <ul class="progress-bar-side">
-                        <!-- First Bar -->
-                        <li class="custom-progress text-white">
-                            <h6 class="mb-0 text-capitalize mons-font">Adobe Photoshop<span class="float-right"><b class="numscroller">96</b>%</span></h6>
-
-                            <div class="progress">
-                                <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">
+            </div>
+        </div>
+    </section>
+    <!-- About & Skills -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row mb-45">
+                <div class="col-md-7">
+                    <h6 class="wow" data-splitting="">I make the future</h6>
+                    <h1 class="wow" data-splitting="">I Develop & Create Digital Future.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <p class="wow fadeInUp" data-wow-delay=".2s">Pellentesque magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi senectus dictum.</p>
+                    <p class="wow fadeInUp" data-wow-delay=".4s">Web design magna magna semper dapibus felis necatin aliuen risus. Pellentesque habitant morbi tristique senectus the neuse malesuada nullam ac lorem miss the duru.</p>
+                    <div class="btn-wrap text-left mt-45 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="btn-link"> <a href="#">info@dbrown.com</a> <span class="btn-block color1 animation-bounce"></span> </div>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-1 wow fadeInUp" data-wow-delay=".8s">
+                    <p class="bar-title">Design<span class="percent align-right">90%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-design start"></div>
+                    </div>
+                    <p class="bar-title">Branding <span class="percent align-right">80%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-branding start"></div>
+                    </div>
+                    <p class="bar-title">Web Design<span class="percent align-right">95%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-webdesign start"></div>
+                    </div>
+                    <p class="bar-title">Social Media<span class="percent align-right">85%</span></p>
+                    <div class="bar">
+                        <div class="bar-fill bar-fill-socialmedia start"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row mb-45">
+                <div class="col-md-4">
+                    <h6 class="wow" data-splitting="">Our Works</h6>
+                    <h1 class="wow" data-splitting="">Portfolio</h1>
+                </div>
+                <div class="col-md-7 offset-md-1 mt-45">
+                    <p class="wow fadeInUp" data-wow-delay=".6s">Phasellus et lacus suscipit congue nisl the volutpat magna. donec miss the drana risus tincidunt convallis velit orci congue tortor eu dignissim ipsum suam non odio. Pellenta esuntion miss the imperdiet metus ornare.</p>
+                </div>
+            </div>
+        </div>
+        <div class="full-width">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <a href="portfolio-page.html">
+                                <div class="img-block">
+                                    <div class="wrapper-img"> <img src="images/portfolio/1.jpg" class="img-fluid"> </div>
+                                    <div class="title-block">
+                                        <h4>Lab. 001</h4>
+                                        <p>Website Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="portfolio-page.html">
+                                <div class="img-block">
+                                    <div class="wrapper-img"> <img src="images/portfolio/2.jpg" class="img-fluid"> </div>
+                                    <div class="title-block">
+                                        <h4>Aer Agency</h4>
+                                        <p>Website / Development</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="portfolio-page.html">
+                                <div class="img-block">
+                                    <div class="wrapper-img"> <img src="images/portfolio/3.jpg" class="img-fluid"> </div>
+                                    <div class="title-block">
+                                        <h4>Joker Card</h4>
+                                        <p>UX Design / Web App</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="portfolio-page.html">
+                                <div class="img-block">
+                                    <div class="wrapper-img"> <img src="images/portfolio/4.jpg" class="img-fluid"> </div>
+                                    <div class="title-block">
+                                        <h4>Peaky Blinders</h4>
+                                        <p>Website / UX Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="portfolio-page.html">
+                                <div class="img-block">
+                                    <div class="wrapper-img"> <img src="images/portfolio/5.jpg" class="img-fluid"> </div>
+                                    <div class="title-block">
+                                        <h4>Design Zoom</h4>
+                                        <p>Branding / Design</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="portfolio-page.html">
+                                <div class="img-block">
+                                    <div class="wrapper-img"> <img src="images/portfolio/6.jpg" class="img-fluid"> </div>
+                                    <div class="title-block">
+                                        <h4>Out Zone</h4>
+                                        <p>UX Design / Web App</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Homepage Blog -->
+    <section id="blog" class="homepage-blog section-padding">
+        <div class="container">
+            <div class="row mb-45">
+                <div class="col-md-12">
+                    <h6 class="wow" data-splitting="">Recent Articles</h6>
+                    <h1 class="wow" data-splitting="">Latest News</h1>
+                </div>
+            </div>
+            <div class="row mb-30">
+				<div class="col-md-6">
+					<div class="img left">
+						<a href="post.html"><img src="images/blog/1.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="col-md-6 valign">
+					<div class="content">
+						<div class="date">
+							<h1>24</h1>
+							<h6>June 2023</h6>
+						</div>
+						<div class="cont">
+							<h5>Get Started With Tiktok Ads.</h5>
+							<p>Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt ornare.</p>
+							<div class="btn-wrap">
+                                <div class="btn-link"> <a href="post.html">Read more <i class="ti-arrow-right"></i></a> <span class="btn-block color1 animation-bounce"></span> </div>   
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+           <div class="row mb-30">
+				<div class="col-md-6 order2 valign">
+					<div class="content">
+						<div class="date">
+							<h1>27</h1>
+							<h6>June 2023</h6>
+						</div>
+						<div class="cont">
+							<h5>UX in Ecommerce – 5 things to avoid.</h5>
+							<p>Phasellus et lacus suscipit congue nis in the miss mine one miss the drana risus in tincidunt ornare.</p>
+							<div class="btn-wrap">
+                                <div class="btn-link"> <a href="post.html">Read more <i class="ti-arrow-right"></i></a> <span class="btn-block color1 animation-bounce"></span> </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 order1">
+					<div class="img left">
+						<a href="post.html"><img src="images/blog/5.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+    <!-- Testiominals -->
+    <section id="testimonials" class="testimonials">
+        <div class="background bg-img bg-fixed section-padding pb-0" data-background="images/banner.jpg">
+            <div class="container">
+                <div class="row">
+                    <!-- Work together -->
+                    <div class="col-md-6 mb-30">
+                        <h4 class="wow" data-splitting="">Need help with professional support? Let's work together!</h4>
+                        <div class="btn-wrap mt-30 text-left wow fadeInUp" data-wow-delay=".6s">
+                            <div class="btn-link"> <a href="#">info@dbrown.com</a> <span class="btn-block color3 animation-bounce"></span> </div>
+                        </div>
+                    </div>
+                    <!-- Testiominals -->
+                    <div class="col-md-5 offset-md-1">
+                        <div class="testimonials-box">
+                            <h5>What Are Clients Saying?</h5>
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <p>Dan entesque magna magna semper daibus elisan neca aliuen risus morbi tristique senectus et netus malesuada fames ac urpis egestas. Nullam miss muris ulvinar miss in the libero dictum.</p> <span class="quote"><img src="images/quot.png" alt=""></span>
+                                    <div class="info">
+                                        <div class="author-img"> <img src="images/team/1.jpg" alt=""> </div>
+                                        <div class="cont">
+                                            <h6>Emily Brown</h6> <span>Project Owner</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item"> <span class="quote"><img src="images/quot.png" alt=""></span>
+                                    <p>Dan entesque magna magna semper daibus elisan neca aliuen risus morbi tristique senectus et netus malesuada fames ac urpis egestas. Nullam miss muris ulvinar miss in the libero dictum.</p>
+                                    <div class="info">
+                                        <div class="author-img"> <img src="images/team/2.jpg" alt=""> </div>
+                                        <div class="cont">
+                                            <h6>Jason White</h6> <span>Project Owner</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </li>
-                        <!-- Second Bar -->
-                        <li class="custom-progress text-white">
-                            <h6 class="mb-0 text-capitalize mons-font">HTML / WordPress<span class="float-right"><b class="numscroller">92</b>%</span></h6>
-
-                            <div class="progress">
-                                <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Third Bar -->
-                        <li class="custom-progress text-white">
-                            <h6 class="mb-0 text-capitalize mons-font">Development<span class="float-right"><b class="numscroller">90</b>%</span></h6>
-
-                            <div class="progress">
-                                <div class="progress-bar bg-yellow" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                </div>
-                            </div>
-                        </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="owl-carousel owl-theme">
+                        <div class="clients-logo">
+                            <a href="#0"><img src="images/clients/1.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="images/clients/2.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="images/clients/3.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="images/clients/4.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="images/clients/5.png" alt=""></a>
+                        </div>
+                        <div class="clients-logo">
+                            <a href="#0"><img src="images/clients/6.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="nilsbrown-footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Get in touch</h5>
+                    <p>info@dbrown.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Locations</h5>
+                    <p>San Francisco — California</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="nilsbrown-footer-social-link">
+                        <li><a href="index.html#"><i class="ti-dribbble"></i></a></li>
+                        <li><a href="index.html#"><i class="ti-instagram"></i></a></li>
+                        <li><a href="index.html#"><i class="ti-skype"></i></a></li>
+                        <li><a href="index.html#"><i class="ti-linkedin"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
-<!-- END SKILLS -->
-
-<!-- START TIMELINE -->
-    <section class="section slide3 timeline-bg" id="timeline">
-        <div class="container">
-            <div class="row pb-5 heading-row">
-                <div class="col-12 col-md-7">
-                    <h3 class="main-font text-uppercase"><span class="text-yellow d-block text-uppercase"> My Career </span> <span> History & Timeline </span></h3>
-                    <p class="py-2 alt-font">Please look what I have done so far in my life.</p>
-                </div>
-                <div class="col-12 col-md-5 text-md-right pt-4 pt-md-0">
-                    <h2 class="m-0 text-yellow main-font">29</h2>
-                    <p class="alt-font">Years Old</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="cd-horizontal-timeline loaded">
-                        <div class="timeline">
-                            <!-- Events-Wrapper -->
-                            <div class="events-wrapper">
-                                <!-- Events -->
-                                <div class="events" style="width: 2200px;">
-                                    <ol>
-                                        <li><a href="#" data-date="16/01/2017" class="older-event selected">2003</a></li>
-                                        <li><a href="#" data-date="28/02/2017" style="left: 200px;">2005</a></li>
-                                        <li><a href="#" data-date="20/04/2017" style="left: 200px;">2007</a></li>
-                                        <li><a href="#" data-date="20/05/2017" style="left: 200px;">2009</a></li>
-                                        <li><a href="#" data-date="09/07/2017" style="left: 200px;">2011</a></li>
-                                        <li><a href="#" data-date="30/08/2017" style="left: 200px;">2013</a></li>
-                                        <li><a href="#" data-date="15/09/2017" style="left: 200px;">2015</a></li>
-                                        <li><a href="#" data-date="01/11/2017" style="left: 200px;">2017</a></li>
-                                        <li><a href="#" data-date="10/12/2017" style="left: 200px;">2019</a></li>
-                                        <li><a href="#" data-date="19/01/2018" style="left: 200px;">2020</a></li>
-                                        <li><a href="#" data-date="03/03/2018" style="left: 200px;">2020</a></li>
-                                    </ol>
-                                    <span class="filling-line" aria-hidden="true"></span>
-                                </div>
-                                <!-- Events -->
-                            </div>
-                            <!-- Events-Wrapper -->
-                            <ul class="cd-timeline-navigation">
-                                <li><a href="#" class="prev">Prev</a></li>
-                                <li><a href="#" class="next">Next</a></li>
-                            </ul>
-                            <!-- Timeline-Navigation -->
-                        </div>
-                        <!-- Timeline -->
-                        <div class="events-content">
-                            <ol>
-                                <li class="selected" data-date="16/01/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                      <div class="main-content text-uppercase">
-                                          <h4 class="text-yellow main-font font-weight-normal">15 MAY 2003</h4>
-                                          <h2 class="main-font">I had graduated from university</h2>
-                                      </div>
-                                  </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-3 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">What I learned </h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Final year project</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="28/02/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">24 Sep 2005</h4>
-                                            <h2 class="main-font">I Took Responsibility In Life</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="sub-content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eos excepturi minus quae. Autem distinctio ea eius laudantium nostrum. Assumenda distinctio eaque enim eveniet, id quas veritatis. Asperiores, facilis provident.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eos excepturi minus quae. Autem distinctio ea eius laudantium nostrum. Assumenda distinctio eaque enim eveniet, id quas veritatis. Asperiores, facilis provident.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="20/04/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">02 Sep 2007</h4>
-                                            <h2 class="main-font">Started Working With Companies</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-6 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-                                                    aperiam aut exercitationem facere itaque laboriosam maxime minus molestiae nemo nulla
-                                                    officiis placeat quam quasi quisquam repudiandae </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                                                    atque cumque ducimus eveniet fugit impedit incidunt ipsam libero maxime, perferendis,
-                                                    quam quasi ratione reiciendis. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="20/05/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">26 Feb 2009</h4>
-                                            <h2 class="main-font">Started Dealing Clients Online </h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-4 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">What I learned </h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="09/07/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">24 MAY 2011</h4>
-                                            <h2 class="main-font">Established My Own Company</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="sub-content">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eos excepturi minus quae. Autem distinctio ea eius laudantium nostrum. Assumenda distinctio eaque enim eveniet, id quas veritatis. Asperiores, facilis provident.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur eos excepturi minus quae. Autem distinctio ea eius laudantium nostrum. Assumenda distinctio eaque enim eveniet, id quas veritatis. Asperiores, facilis provident.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="30/08/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">16 Jan 2013</h4>
-                                            <h2 class="main-font">Successfully Establish My Business </h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-6 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-                                                    aperiam aut exercitationem facere itaque laboriosam maxime minus molestiae nemo nulla
-                                                    officiis placeat quam quasi quisquam repudiandae </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                                                    atque cumque ducimus eveniet fugit impedit incidunt ipsam libero maxime, perferendis,
-                                                    quam quasi ratione reiciendis. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="15/09/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">15 MAY 2015</h4>
-                                            <h2 class="main-font">I had graduated from university</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-3 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">What I learned </h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Final year project</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="01/11/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">20 Aug 2017</h4>
-                                            <h2 class="main-font">Started Working On Expand Business</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-12 pl-md-0">
-                                            <div class="sub-content">
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="10/12/2017">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">15 MAY 2019</h4>
-                                            <h2 class="main-font">I had graduated from university</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-3 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">What I learned </h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-3 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Final year project</h5>
-                                                <p class="alt-font">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="19/01/2018">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">28 Oct 2020</h4>
-                                            <h2 class="main-font">Successful In Expanding Business World Wide </h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-6 pl-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">Major subjects</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
-                                                    aperiam aut exercitationem facere itaque laboriosam maxime minus molestiae nemo nulla
-                                                    officiis placeat quam quasi quisquam repudiandae </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 pr-md-0">
-                                            <div class="sub-content">
-                                                <h5 class="text-uppercase main-font text-yellow">My Achievements</h5>
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-                                                    atque cumque ducimus eveniet fugit impedit incidunt ipsam libero maxime, perferendis,
-                                                    quam quasi ratione reiciendis. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li data-date="03/03/2018">
-                                    <!-- Main Content Div -->
-                                    <div class="col-12 pl-md-0">
-                                        <div class="main-content text-uppercase">
-                                            <h4 class="text-yellow main-font font-weight-normal">15 MAY 2020</h4>
-                                            <h2 class="main-font">Looking Forward For More Opportunities</h2>
-                                        </div>
-                                    </div>
-                                    <!-- Sub Content Div -->
-                                    <div class="row align-items-center">
-                                        <div class="col-12 col-md-12 pl-md-0">
-                                            <div class="sub-content">
-                                                <p class="alt-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- END TIMELINE -->
-
-<!-- START PORTFOLIO -->
-    <section class="section slide4 portfolio-bg" id="portfolio">
-        <div class="container">
-            <div class="row pb-5 heading-row">
-                <div class="col-12 col-md-7">
-                    <h3 class="main-font text-uppercase"><span class="text-yellow d-block"> PORTFOLIO </span> <span> MY RECENT WORK </span></h3>
-                    <p class="py-1 alt-font">I believe in art and that is my passion throughout my life.</p>
-                </div>
-                <div class="col-12 col-md-5 text-md-right pt-4 pt-md-0">
-                    <h2 class="m-0 text-yellow main-font">20</h2>
-                    <p class="alt-font">Portfolio Items</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="team-classic owl-team owl-carousel text-center">
-                        <!-- Item 1 -->
-                        <div class="item">
-                            <div class="team-data-img">
-                                <a href="https://dribbble.com/shots/14575988-Css-Neumorphic-Login-Form-Design" data-fancybox="images">
-                                <div class="single-work">
-                                    <img src="https://cdn.dribbble.com/users/4502458/screenshots/14575988/media/e7451c93c76301cbd8e0064e82ff3440.png?compress=1&resize=1200x900&vertical=top" alt="team" class="img-responsive" data-no-retina>
-                                    <div class="overlay-text center-block">
-                                        <div class="cases-image-inner">
-                                            <span class="cases-line top"></span>
-                                            <span class="cases-line top-right"></span>
-                                            <span class="cases-line bottom"></span>
-                                            <span class="cases-line bottom-left"></span>
-                                            <h6 class="text-white text-uppercase alt-font">Strategy Buildup</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                                <div class="portfolio-content">
-                                    <h5 class="text-yellow main-font mb-2 text-uppercase">Corporate Website</h5>
-                                    <p class="text-capitalize">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 2 -->
-                        <div class="item">
-                            <div class="team-data-img">
-                                <a href="https://cdn.dribbble.com/users/4502458/screenshots/17985809/media/7f3f2dc949b0b94697613b442a08e2b6.jpg" data-fancybox="images">
-                                <div class="single-work">
-                                    <img src="https://cdn.dribbble.com/users/4502458/screenshots/17985809/media/7f3f2dc949b0b94697613b442a08e2b6.jpg" alt="team" class="img-responsive" data-no-retina>
-                                    <div class="overlay-text center-block">
-                                        <div class="cases-image-inner">
-                                            <span class="cases-line top"></span>
-                                            <span class="cases-line top-right"></span>
-                                            <span class="cases-line bottom"></span>
-                                            <span class="cases-line bottom-left"></span>
-                                            <h6 class="text-white text-uppercase alt-font">Business Planning</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                                <div class="portfolio-content">
-                                    <h5 class="text-yellow main-font mb-2 text-uppercase">My Presentation</h5>
-                                    <p class="text-capitalize">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 3 -->
-                        <div class="item">
-                            <div class="team-data-img">
-                                <a href="https://cdn.dribbble.com/users/4502458/screenshots/17778694/media/c0e06aabf0e5ed8b361b8d90a0fe7cc9.png?compress=1&resize=1200x900&vertical=top" data-fancybox="images">
-                                <div class="single-work">
-                                    <img src="https://cdn.dribbble.com/users/4502458/screenshots/17778694/media/c0e06aabf0e5ed8b361b8d90a0fe7cc9.png?compress=1&resize=1200x900&vertical=top" alt="team" class="img-responsive" data-no-retina>
-                                    <div class="overlay-text center-block">
-                                        <div class="cases-image-inner">
-                                            <span class="cases-line top"></span>
-                                            <span class="cases-line top-right"></span>
-                                            <span class="cases-line bottom"></span>
-                                            <span class="cases-line bottom-left"></span>
-                                            <h6 class="text-white text-uppercase alt-font">Creative Ideas</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                </a>
-                                <div class="portfolio-content">
-                                    <h5 class="text-yellow main-font mb-2 text-uppercase">Graphic Portfolio</h5>
-                                    <p class="text-capitalize">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 4 -->
-                        <div class="item">
-                            <div class="team-data-img">
-                                <a href="https://cdn.dribbble.com/users/4502458/screenshots/17613934/media/172a082c1d530b337daa51f5a2198bae.png" data-fancybox="images">
-                                    <div class="single-work">
-                                        <img src="https://cdn.dribbble.com/users/4502458/screenshots/17613934/media/172a082c1d530b337daa51f5a2198bae.png" alt="team" class="img-responsive" data-no-retina>
-                                        <div class="overlay-text center-block">
-                                            <div class="cases-image-inner">
-                                                <span class="cases-line top"></span>
-                                                <span class="cases-line top-right"></span>
-                                                <span class="cases-line bottom"></span>
-                                                <span class="cases-line bottom-left"></span>
-                                                <h6 class="text-white text-uppercase alt-font">Strategy Buildup</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="portfolio-content">
-                                    <h5 class="text-yellow main-font mb-2 text-uppercase">Corporate Website</h5>
-                                    <p class="text-capitalize">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 5 -->
-                        <div class="item">
-                            <div class="team-data-img">
-                                <a href="https://cdn.dribbble.com/users/4502458/screenshots/17951998/media/32c5da9f4e40637698987c369e155e62.jpg" data-fancybox="images">
-                                    <div class="single-work">
-                                        <img src="https://cdn.dribbble.com/users/4502458/screenshots/17951998/media/32c5da9f4e40637698987c369e155e62.jpg" alt="team" class="img-responsive" data-no-retina>
-                                        <div class="overlay-text center-block">
-                                            <div class="cases-image-inner">
-                                                <span class="cases-line top"></span>
-                                                <span class="cases-line top-right"></span>
-                                                <span class="cases-line bottom"></span>
-                                                <span class="cases-line bottom-left"></span>
-                                                <h6 class="text-white text-uppercase alt-font">Business Planning</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="portfolio-content">
-                                    <h5 class="text-yellow main-font mb-2 text-uppercase">My Presentation</h5>
-                                    <p class="text-capitalize">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Item 6 -->
-                        <div class="item">
-                            <div class="team-data-img">
-                                <a href="https://cdn.dribbble.com/users/4502458/screenshots/14901752/media/da35413e975b19705e598bb7e482c2cc.jpg" data-fancybox="images">
-                                    <div class="single-work">
-                                        <img src="https://cdn.dribbble.com/users/4502458/screenshots/14901752/media/da35413e975b19705e598bb7e482c2cc.jpg" alt="team" class="img-responsive" data-no-retina>
-                                        <div class="overlay-text center-block">
-                                            <div class="cases-image-inner">
-                                                <span class="cases-line top"></span>
-                                                <span class="cases-line top-right"></span>
-                                                <span class="cases-line bottom"></span>
-                                                <span class="cases-line bottom-left"></span>
-                                                <h6 class="text-white text-uppercase alt-font">Creative Ideas</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="portfolio-content">
-                                    <h5 class="text-yellow main-font mb-2 text-uppercase">Graphic Portfolio</h5>
-                                    <p class="text-capitalize">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="circle ini-customPrevBtn" id="team-circle-left">
-                        <i class="lni lni-arrow-left-circle"></i>
-                    </a>
-                    <a class="circle ini-customNextBtn" id="team-circle-right">
-                        <i class="lni lni-arrow-right-circle"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-<!-- END PORTFOLIO -->
-
-<!-- START TESTIMONIALS -->
-    <section class="section slide6 testimonial-bg" id="testimonial">
-        <div class="container">
-            <div class="row pb-5 heading-row">
-                <div class="col-12 col-md-7">
-                    <h3 class="main-font text-uppercase"><span class="text-yellow d-block text-uppercase"> Customers </span> <span> love the work i do </span></h3>
-                    <p class="py-2 heading-row alt-font">Please look what my clients say about my exceptional work</p>
-                </div>
-                <div class="col-12 col-md-5 text-md-right pt-4 pt-md-0">
-                    <h2 class="m-0 text-yellow main-font">200+</h2>
-                    <p class="alt-font">Clients Worldwide</p>
-                </div>
-            </div>
-
-            <div class="row pt-3">
-                <div class="col-12">
-                    <!-- Testimonial Slider -->
-                    <div id="testimonial-carousal" class="testimonial-owl owl-carousel owl-theme">
-                        <!-- Item-1 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/gamer.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Sara Jones</h4>
-                            </div>
-                        </div>
-                        <!-- Item-2 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/girl.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Ricky Clark</h4>
-                            </div>
-                        </div>
-                        <!-- Item-3 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/hacker.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Johnson Smith</h4>
-                            </div>
-                        </div>
-                        <!-- Item-4 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/man.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Ellie Joe</h4>
-                            </div>
-                        </div>
-                        <!-- Item-5 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/programmer.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Sara Jones</h4>
-                            </div>
-                        </div>
-                        <!-- Item-6 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/woman.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Ricky Clark</h4>
-                            </div>
-                        </div>
-                        <!-- Item-7 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/girl.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Johnson Smith</h4>
-                            </div>
-                        </div>
-                        <!-- Item-8 -->
-                        <div class="item text-center">
-                            <div class="icon-quotes mb-4">
-                                <i class="lni lni-quotation"></i>
-                            </div>
-                            <div class="description">
-                                <p class="text-grey paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam. Mauris malesuada, nisl non rutrum commodo, sem magna laoreet tellus, eu euismod dolor enim et mi. In at tempor purus. </p>
-                            </div>
-                            <div class="testimonial-img mt-4">
-                                <img src="img/av/man.png" alt="">
-                            </div>
-                            <div class="testimonial-tittle mt-3 mb-3">
-                                <h4 class="mb-0 text-yellow main-font font-weight-normal text-uppercase">Ellie Joe</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-<!-- END TESTIMONIALS -->
-
-<!-- START CONTACT -->
-    <section class="section slide5 contact-bg" id="contact">
-        <div class="container">
-            <div class="row pb-5">
-                <div class="col-12 col-md-7">
-                    <h3 class="main-font text-uppercase"><span class="text-yellow d-block text-uppercase"> Contact Me </span> <span> Lets Get In Touch </span></h3>
-                    <p class="py-2 alt-font">I am available all the time for any project acording to my skills.</p>
-                </div>
-                <div class="col-12 col-md-5 text-md-right pt-4 pt-md-0">
-                    <h2 class="m-0 text-yellow main-font font-weight-bold">MEGA.ONE</h2>
-                    <p class="alt-font">My Skype ID</p>
-                </div>
-            </div>
-            <form class="contact-form" id="contact-form-data">
-                <div class="row pt-3">
-                    <!-- Submission Popup -->
-                    <div class="col-12">
-                        <div class="col-sm-12 px-0" id="result"></div>
-                    </div>
-                    <!--Left Column-->
-                    <div class="col-md-4">
-                        <div class="form-group">
-                            <input class="form-control" type="text" placeholder="Name" required="" id="first_name" name="firstName">
-                        </div>
-
-                        <div class="form-group">
-                            <input class="form-control" type="tel" placeholder="Contact No" id="phone" name="userPhone">
-                        </div>
-
-                        <div class="form-group">
-                            <input class="form-control" type="email" placeholder="Email" required="" id="email" name="userEmail">
-                        </div>
-                    </div>
-                    <!--Right Column-->
-                    <div class="col-12 col-md-6 offset-md-1 contact-form">
-                        <div class="form-group">
-                            <textarea class="form-control" placeholder="Type Your Message Here" id="message" name="userMessage"></textarea>
-                        </div>
-                    </div>
-                    <!-- Button -->
-                    <div class="col-12 px-md-0">
-                        <div class="contact-btn pt-5 text-center text-lg-left">
-                            <button type="button" class="btn btn-medium btn-rounded btn-yellow text-capitalize contact_btn">Contact Now</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-<!-- END CONTACT -->
-</div>
-
-<!-- Start Copyright -->
-<div class="slider-bottom">
-    <div class="slider-footer w-auto">
-        <ul class="social-icons-simple">
-            <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-facebook-filled"></i> </a> </li>
-            <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-instagram-original"></i> </a> </li>
-            <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-twitter-filled"></i> </a> </li>
-            <li><a class="social-icon" href="javascript:void(0)"><i class="lni lni-linkedin-original"></i> </a> </li>
-        </ul>
-    </div>
-    <span class="slider-copyright text-grey">@Animation Coding</span>
-</div>
-<!-- End Copyright -->
-
-<!-- JavaScript -->
-<script src="js/bundle.min.js"></script>
-<!-- Plugin Js -->
- 
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-
-<script src='https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples.min.js'></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/jquery.fancybox.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<!-- CUSTOM JS -->
-<script src="js/jquery.pagepiling.min.js"></script>
-<script src="js/timeline.js"></script>
-<script src="js/contact_us.js"></script>
-<script src="js/script.js"></script>
-
+    </footer>
+    <!-- jQuery -->
+    <script src="js/plugins/jquery-3.6.0.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins/YouTubePopUp.js"></script>
+    <script src="js/plugins/jquery.easing.1.3.js"></script>
+    <script src="js/plugins/smooth-scroll.min.js"></script>
+    <script src="js/plugins/wow.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
